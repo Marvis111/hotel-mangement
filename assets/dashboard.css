@@ -1,0 +1,67 @@
+font-face {font-family: Open Sans Regular;src: url(../fonts/OpenSans-Regular.ttf);display:swap;}
+*{
+    margin: 0;
+}
+body{
+    background-color: #ebebed;
+}
+.nav-section, .calendar-section{
+    width: 270px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+}
+.calendar-section {
+    left: auto;
+    right: 0;
+    width: 315px;
+    padding: 5px !important;
+}
+.main-section{
+    margin-left: 270px;
+    width: calc(100% - 280px);
+}
+ul li{
+    list-style: none;
+    
+}
+.nav-section ul li{
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    padding-left: 17px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nav-section ul li i{
+    margin-right: 10px;
+}
+.jumbotron{
+    background-color: #2472b024 !important;
+}
+.nav-section ul li.active, .nav-section ul li.active:hover {
+    background-color: #2472b0;
+}
+.nav-section ul li:hover{
+    background-color: #2471b023;
+}
+.nav-section ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+.nav-section ul li.active > a{
+    color: white !important;
+}
+.nav-section ul{
+    padding-left: 0.6rem;
+}input:focus, select:focus{
+    border: none !important;
+  }

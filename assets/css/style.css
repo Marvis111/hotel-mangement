@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Open Sans Regular;
+    src: url(../../fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: Open Sans SemiBold;
+    src: url(../../fonts/OpenSans-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: Open Sans Bold;
+    src: url(../../fonts/OpenSans-Bold.ttf)
+}
+
+/* Sass Decoration to assign color values*/
+:root {
+    --black--: black;
+    --yellow--: #FFAD01;
+    --ash--: #f2f2f2;
+    --brown--:#887392;
+    --white--: #FFFFFF;
+    --blue--: #007bff;
+    --deepblue--: rgb(25, 50, 77);
+}
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    padding:0px !important;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+header{
+    height: 32px;
+    background-color: #04175a;
+    color: white;
+    display: flex;
+    -ms-flex-align: end;
+    place-content: flex-end;
+}
+header ul {
+    display: flex;
+    padding-right: 15px;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul a {
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+header ul a:hover{
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+nav{
+    height: 50px;
+    width: 100%;
+    display: grid !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+
+}
+
+.navbar-container{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+
+}
+@media all and (max-width: 600px){
+  .navbar-container{
+    justify-content: space-between;
+  }
+}
+nav .div{
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+
+.div span{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 90%;
+}
+.div a {
+  color: white;
+  text-decoration: none;
+}
+.div span i{
+  margin-left: 5px;
+}
+.icon-menu{
+    display: none;
+}
+.index-form{
+  display: none !important;
+}
+@media all and (max-width: 688px){
+    .div span{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+@media all and (max-width: 667px){
+    element{
+        display: none;
+    }
+    nav .div{
+        padding-left: 18px;
+    }
+}
+@media all and (max-width: 660px){
+    .more{
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+    }
+}
+.div > ul{
+    position:absolute;
+    background-color: white;
+    width: 260px;
+    right: 3.5%;
+    padding: 0;
+    top: 82px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+    color: black;
+    border:1px solid #e8e8e8;
+    display: none;
+    border-radius:0px 0px 20px 20px;
+}
+.div ul li{
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    color: gray;
+    justify-content: center;
+    cursor: pointer;
+}   
+.div ul li:hover{
+    background-color: #04175a;
+}
+.div ul li:hover > a{
+    color: white!important;
+}
+.div ul li:last-child{
+  border-bottom:0.5px solid #e8e8e8;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.div ul li a{
+  display: flex;
+  align-items: center;
+  font-size: 94%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: gray;
+}
+.div ul li a i{
+  margin-right: 10px;
+}
+.icon-close{
+    display: none;
+}
+nav element{
+    color: gray;
+}
+
+  .error-message{color: red;position: absolute;top: 44px;left: 10px;font-size: 13px;font-weight: 500;}
+  .form.container{
+    background-color: white;
+    min-height: 500px;
+    margin-top: 45px;
+    padding: 25px;
+    border-radius: 25px;
+  }
+  .form .form-field{
+    display: grid;
+  }
+  .form .form-field input, .form .form-field textarea, .form .form-field select{
+    width: 100%;
+    height: 45px;
+    background-color: #e4e4e4;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .form .form-field textarea{
+    min-height: 200px;
+  }
+  .form label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4c4747;
+    margin-bottom: 7px;
+  }
+  .btn {
+    width: 150px              !important;
+    background-color: #2d47a2 !important;
+    border: none              !important;
+    outline: none             !important;
+    height: 49px              !important;
+    border-radius: 49px       !important;
+    color: #fff               !important;
+    text-transform: uppercase !important;
+    font-weight: 600          !important;
+    margin: 10px 0            !important;
+    cursor: pointer           !important;
+    transition: 0.5s          !important;
+  }
+  
+  .btn:hover {
+    background-color: #2d47a2 !important;
+  }
+  .btn.solid.margin{
+      display: block;
+      margin: auto !important;
+  }
+  
